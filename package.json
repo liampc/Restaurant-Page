@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "project for Odin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liampc/Restaurant-Page.git"
+  },
+  "author": "Lia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liampc/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/liampc/Restaurant-Page#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
