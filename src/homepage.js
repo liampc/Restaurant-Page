@@ -3,7 +3,7 @@ import "./hpStyle.css";
 
 let createTags = (tag, className) => {
     let element = document.createElement(tag)
-    element.classList.add(className || )
+    element.classList.add(className || null)
     return element;
 }
 

@@ -2,8 +2,16 @@ import "./menuStyle.css";
 import {createTags} from "./homepage"
 
 
+let addDishes = (array, tag ) => {
+    let text = ""
+    for (let i = 0; i < array.length; i++){
+        text += `<${tag}> ${array[i]} </${tag}>`
+    }
+    return text;
+}
 
 
+let test1 = addDishes(["a", "b"], "p")
 
 
 function initialPageLoad(){
@@ -20,13 +28,21 @@ function initialPageLoad(){
     let desserts = createTags("div", "desserts")
 
 
+    //arrays
+    let appetList = ["Stir Fry Tofu", "Baked Tofu"]
+    
+    
 
     //text
     title.innerHTML = "Just Gastritis Things"
+    appetizer.innerHTML = addDishes(appetList, "p")
+
 
 
     //append
-    main.append(title, menu, appetizer, mainCourse, desserts)
+   
+    menu.append(title, appetizer, mainCourse, desserts)
+    main.append(menu)
     container.append(header, main)
 
 
