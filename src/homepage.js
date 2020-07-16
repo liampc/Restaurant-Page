@@ -3,7 +3,7 @@ import "./hpStyle.css";
 
 let createTags = (tag, className) => {
     let element = document.createElement(tag)
-    element.classList.add(className || null)
+    element.classList.add(className || )
     return element;
 }
 
@@ -45,4 +45,4 @@ function initialPageLoad(){
 
 }
 
-export {initialPageLoad as initialpage} 
+export {initialPageLoad as initialpage, createTags} 

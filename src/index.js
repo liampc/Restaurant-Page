@@ -6,3 +6,5 @@ const content = document.querySelector("#content")
 
 
 //content.append(homepage.initialpage())
+
+content.append(menu.initialPage())
