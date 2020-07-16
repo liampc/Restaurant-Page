@@ -1,3 +1,4 @@
+import "./hpStyle.css";
 
 
 let createTags = (tag, className) => {
