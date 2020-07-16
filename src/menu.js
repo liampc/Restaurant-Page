@@ -11,6 +11,13 @@ let addDishes = (array, tag ) => {
 }
 
 
+let addEmptyTags = (num, tag) => {
+    let tags = ""
+    for (let i = 0; i < num; i++){
+        tags += `<${tag}></${tag}>`
+    }
+    return tags;
+}
 
 
 
@@ -40,11 +47,10 @@ function initialPageLoad(){
     title.innerHTML = "Just Gastritis Things"
     appetizer.innerHTML = addDishes(appetList, "p")
     desserts.innerHTML = addDishes(dessertsList, "p")
-
+    mainCourse.innerHTML = addEmptyTags(2, "div")
 
 
     //append
-    mainCourse.append(emptyTag)
     menu.append(appetizer, mainCourse, desserts)
     main.append(title,menu)
     container.append(header, main)
