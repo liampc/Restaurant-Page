@@ -21,9 +21,13 @@ function initialPageLoad(){
     
     //divs
     let header = createTags("div", "header")
+    let home = createTags("div")
+    let menu = createTags("div")
+    let contact = createTags("div")
+
     let main = createTags("div", "main-content")
     let title = createTags("h1")
-    let menu = createTags("div", "main-menu")
+    let mainMenu = createTags("div", "main-menu")
     let appetizer = createTags("div", "appetizer")
     let mainCourse = createTags("div", "main-course")
     let desserts = createTags("div", "desserts")
@@ -48,12 +52,17 @@ function initialPageLoad(){
     dairy.innerHTML = addDishes(dairyList, "p", "h2");
     drinks.innerHTML = addDishes(drinksList, "p", "h2")
 
+    home.innerHTML = "Home";
+    menu.innerHTML = "Menu"
+    contact.innerHTML = "Contact"
+
 
     //append
     desserts.append(dairy, drinks)
     mainCourse.append(bland, flavor)
-    menu.append(appetizer, mainCourse, desserts)
-    main.append(title,menu)
+    mainMenu.append(appetizer, mainCourse, desserts)
+    main.append(title,mainMenu)
+    header.append(home, menu, contact)
     container.append(header, main)
 
 
