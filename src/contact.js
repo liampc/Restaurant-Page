@@ -2,6 +2,17 @@ import "./contactStyle.css"
 import {createTags} from "./homepage"
 
 
+let createMultipleTags = (num, tag) => {
+    let tags = ""
+    for (let i = 0; i < num; i++){
+        tags += `<${tag}> </${tag}>`
+    }
+    return tags;
+}
+
+
+
+
 function initialPageLoad() {
 
     //elements 
@@ -15,7 +26,8 @@ function initialPageLoad() {
     let main = createTags("div", "main")
     let info = createTags("div", "info")
     let title = createTags("h1")
-
+    
+    let spans = document.querySelectorAll(".info > span")
 
 
     //text
@@ -23,6 +35,7 @@ function initialPageLoad() {
     menu.innerHTML = "Menu"
     contact.innerHTML = "Contact"
     title.innerHTML = "Contact Me"
+    info.innerHTML = createMultipleTags(4, "span")
 
 
     //append
