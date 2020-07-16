@@ -11,7 +11,7 @@ let addDishes = (array, tag ) => {
 }
 
 
-let test1 = addDishes(["a", "b"], "p")
+
 
 
 function initialPageLoad(){
@@ -26,23 +26,27 @@ function initialPageLoad(){
     let appetizer = createTags("div", "appetizer")
     let mainCourse = createTags("div", "main-course")
     let desserts = createTags("div", "desserts")
+   
 
 
     //arrays
-    let appetList = ["Stir Fry Tofu", "Baked Tofu"]
-    
+    const appetList = ["Stir Fry Tofu", "Baked Tofu", "Silken Tofu", "Just"]
+    const blandList = ["OatMeal", "Basic White Bread"];
+    const flavorList = ["Ramen noodles without powder", "Spaghetti without tomato and cheese", "Pizza crust"]
+    const dessertsList = ["Serbet", "Ice cubes"]
     
 
     //text
     title.innerHTML = "Just Gastritis Things"
     appetizer.innerHTML = addDishes(appetList, "p")
+    desserts.innerHTML = addDishes(dessertsList, "p")
 
 
 
     //append
-   
-    menu.append(title, appetizer, mainCourse, desserts)
-    main.append(menu)
+    mainCourse.append(emptyTag)
+    menu.append(appetizer, mainCourse, desserts)
+    main.append(title,menu)
     container.append(header, main)
 
 
