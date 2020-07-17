@@ -29,7 +29,7 @@ function initialPageLoad(){
 
     //elements 
     let container = createTags("div", "container")
-    let main = createTags("div", "main")
+    let main = createTags("div", "home-bg")
 
    
     let emptyDiv = createTags("div")
