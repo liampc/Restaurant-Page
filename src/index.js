@@ -13,3 +13,17 @@ content.append(homepage.addHeader())
 
 content.append(contact.initialPage())
 
+let tabs = document.querySelectorAll(".header > *")
+
+tabs.forEach(tab => {
+    tab.addEventListener("click", (e) => {
+        let nodes = content.childNodes
+        
+        nodes.forEach(node => {
+            if (node.className == "container"){
+                node.remove()
+            }
+        })
+
+    })
+})
