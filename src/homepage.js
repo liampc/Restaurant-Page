@@ -8,16 +8,30 @@ let createTags = (tag, className) => {
 }
 
 
+function addHeader() {
+    let header = createTags("div", "header");
+
+    let home = createTags("div", "home")
+    let menu = createTags("div", "menu")
+    let contact = createTags("div", "contact")
+
+    home.innerHTML = "Home";
+    menu.innerHTML = "Menu"
+    contact.innerHTML = "Contact"
+
+
+    header.append(home,menu, contact)
+
+    return header
+}
+
 function initialPageLoad(){
 
     //elements 
     let container = createTags("div", "container")
-    let header = createTags("div", "header")
     let main = createTags("div", "main")
 
-    let home = createTags("div")
-    let menu = createTags("div")
-    let contact = createTags("div")
+   
     let emptyDiv = createTags("div")
 
     let restoName = createTags("h1")
@@ -25,10 +39,7 @@ function initialPageLoad(){
 
 
     //text
-    home.innerHTML = "Home";
-    menu.innerHTML = "Menu"
-    contact.innerHTML = "Contact"
-
+    
     restoName.innerHTML = "EAT WELL"
     quote.innerHTML = "A restaurant that caters to your needs"
 
@@ -45,4 +56,4 @@ function initialPageLoad(){
 
 }
 
-export {initialPageLoad as initialpage, createTags} 
+export {initialPageLoad as initialPage, createTags, addHeader} 

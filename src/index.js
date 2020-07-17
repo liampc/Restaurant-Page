@@ -10,4 +10,6 @@ const content = document.querySelector("#content")
 
 //content.append(menu.initialPage())
 
-content.append(contact.initialPage())
+//content.append(contact.initialPage())
+
+content.append(homepage.addHeader())
