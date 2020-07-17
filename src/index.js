@@ -7,17 +7,18 @@ const content = document.querySelector("#content")
 
 content.append(homepage.addHeader())
 
-//content.append(homepage.initialPage())
+content.append(homepage.initialPage())
 
-//content.append(menu.initialPage())
 
-content.append(contact.initialPage())
+
+
 
 let tabs = document.querySelectorAll(".header > *")
 
 tabs.forEach(tab => {
     tab.addEventListener("click", (e) => {
         let nodes = content.childNodes
+        let tab = e.target
         
         nodes.forEach(node => {
             if (node.className == "container"){
@@ -25,5 +26,14 @@ tabs.forEach(tab => {
             }
         })
 
+        if (tab.className == "contact"){
+            content.append(contact.initialPage())
+        }
+        else if (tab.className == "menu"){
+            content.append(menu.initialPage())
+        }
+        else if (tab.className == "home"){
+            content.append(homepage.initialPage())
+        }        
     })
 })
