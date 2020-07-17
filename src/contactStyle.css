@@ -1,0 +1,43 @@
+.main {
+    background-image: url("https://img.freepik.com/free-photo/empty-wood-table-white-brick-wall-background_7190-675.jpg?size=626&ext=jpg");
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: "Oleo Script", cursive;
+    margin-top: 0;
+    width: 100vw;
+    display: flex;
+    
+}
+
+.info {
+    background-color: #19181894;
+    height: 40vh;
+    width: 40vw;
+    margin: 10% auto;
+}
+
+
+
+.info > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: white thin solid;
+}
+
+a {
+    text-decoration: underline;
+    color:white;
+}
+
+a:hover {
+    color: brown;
+}
