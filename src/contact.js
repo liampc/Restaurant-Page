@@ -44,4 +44,4 @@ function initialPageLoad() {
 }
 
 
-export {initialPageLoad as initialPage}
+export {initialPageLoad as contactPage}

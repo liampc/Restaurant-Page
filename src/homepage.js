@@ -54,4 +54,4 @@ function initialPageLoad(){
 
 }
 
-export {initialPageLoad as initialPage, createTags, addHeader} 
+export {initialPageLoad as homePage, createTags, addHeader} 

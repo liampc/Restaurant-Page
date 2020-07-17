@@ -64,4 +64,4 @@ function initialPageLoad(){
     return container
 }
 
-export {initialPageLoad as initialPage}
+export {initialPageLoad as menuPage}

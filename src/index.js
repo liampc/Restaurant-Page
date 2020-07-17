@@ -1,13 +1,13 @@
-import * as homepage from "./homepage"
-import * as menu from "./menu"
-import * as contact from "./contact"
+import {homePage,addHeader} from "./homepage"
+import {menuPage} from "./menu"
+import {contactPage} from "./contact"
 
 
 const content = document.querySelector("#content")
 
-content.append(homepage.addHeader())
+content.append(addHeader())
 
-content.append(homepage.initialPage())
+content.append(homePage())
 
 
 
@@ -27,13 +27,13 @@ tabs.forEach(tab => {
         })
 
         if (tab.className == "contact"){
-            content.append(contact.initialPage())
+            content.append(contactPage())
         }
         else if (tab.className == "menu"){
-            content.append(menu.initialPage())
+            content.append(menuPage())
         }
         else if (tab.className == "home"){
-            content.append(homepage.initialPage())
+            content.append(homePage())
         }        
     })
 })
