@@ -7,12 +7,29 @@
     font-family: "Oleo Script", cursive;
     margin-top: 0;
     width: 100vw;
+    display: flex;
+    
 }
+
+.info {
+    background-color: #19181894;
+    height: 40vh;
+    width: 40vw;
+    margin: 10% auto;
+}
+
+
 
 .info > * {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 2em;
+    
+}
+
+h1 {
+    font-size: 2em;
 }
 
 a {
