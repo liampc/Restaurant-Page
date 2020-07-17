@@ -9,14 +9,15 @@
     width: 100vw;
 }
 
-.info {
+.info > * {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
 }
 
 a {
     text-decoration: underline;
+    color:white;
 }
 
 a:hover {

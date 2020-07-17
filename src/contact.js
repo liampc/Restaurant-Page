@@ -2,16 +2,24 @@ import "./contactStyle.css"
 import {createTags} from "./homepage"
 
 
-let createMultipleTags = (num, tag) => {
-    let tags = ""
-    for (let i = 0; i < num; i++){
-        tags += `<${tag}> </${tag}>`
-    }
-    return tags;
+
+let myInfo = {
+    name: "Kathlia Carlos",
+    github: "https://github.com/liampc",
+    twitter: "https://twitter.com/lia_mpcarlos"
 }
 
 
+let render = (obj) => {
+        let text =  `
+        <h1> Contact Me </h1>
+        <span> ${obj.name} </span>
+        <a href="${obj.github}" target="_blank"> Github </a>
+        <a href="${obj.twitter}" target="_blank"> Twitter </a>
+        `
 
+    return text;
+}
 
 function initialPageLoad() {
 
@@ -25,21 +33,17 @@ function initialPageLoad() {
 
     let main = createTags("div", "main")
     let info = createTags("div", "info")
-    let title = createTags("h1")
-    
-    let spans = document.querySelectorAll(".info > span")
+   
 
 
     //text
     home.innerHTML = "Home";
     menu.innerHTML = "Menu"
     contact.innerHTML = "Contact"
-    title.innerHTML = "Contact Me"
-    info.innerHTML = createMultipleTags(4, "span")
+    info.innerHTML = render(myInfo);
 
 
     //append
-    info.append(title)
     main.append(info)
     header.append(home, menu, contact)
     container.append(header, main)
