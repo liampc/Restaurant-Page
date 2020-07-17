@@ -4,18 +4,18 @@ import {createTags} from "./homepage"
 
 
 let myInfo = {
-    name: "Kathlia Carlos",
-    github: "https://github.com/liampc",
-    twitter: "https://twitter.com/lia_mpcarlos"
+    Phone: "1-800-909-FAKE",
+    Email: "EatWellorElse@gmail.com",
+    Address: "88 Somewhere Over the Rainbow"
 }
 
 
 let render = (obj) => {
         let text =  `
-        <h1> Contact Me </h1>
-        <span> ${obj.name} </span>
-        <a href="${obj.github}" target="_blank"> Github </a>
-        <a href="${obj.twitter}" target="_blank"> Twitter </a>
+        <h1> Contact Us </h1>
+        <span> Phone: ${obj.Phone} </span>
+        <span> Email: ${obj.Email} </span>
+        <span> Address: ${obj.Address}  </span>
         `
 
     return text;

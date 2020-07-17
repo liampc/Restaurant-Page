@@ -37,9 +37,9 @@ function initialPageLoad(){
     //arrays
     const appetList = ["Forced Vegan's Food","Stir Fry Tofu", "Baked Tofu", "Silken Tofu", "Just Tofu"]
     const blandList = ["Bland Selection","OatMeal", "Basic White Bread"];
-    const flavorList = ["Flavourless Dishes","Ramen noodles without powder", "Spaghetti without tomato and cheese", "Pizza crust"]
+    const flavorList = ["Flavourless Dishes","Ramen Noodles without Powder", "Spaghetti without Tomato and Cheese", "Pizza Crust"]
     const dairyList = ["!Dairy Desserts","Serbet", "Ice cubes"]
-    const drinksList = ["Not Coffee drinks","Ginger tea", "Wheatgrass smoothie"]
+    const drinksList = ["Not Coffee Drinks","Ginger Tea", "Wheatgrass Smoothie"]
     
     //text
     title.innerHTML = "Just Gastritis Things"
