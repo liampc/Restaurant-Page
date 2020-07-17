@@ -20,10 +20,7 @@ function initialPageLoad(){
     let container = createTags("div", "container")
     
     //divs
-    let header = createTags("div", "header")
-    let home = createTags("div")
-    let menu = createTags("div")
-    let contact = createTags("div")
+   
 
     let main = createTags("div", "main-content")
     let title = createTags("h1")
@@ -52,9 +49,7 @@ function initialPageLoad(){
     dairy.innerHTML = addDishes(dairyList, "p", "h2");
     drinks.innerHTML = addDishes(drinksList, "p", "h2")
 
-    home.innerHTML = "Home";
-    menu.innerHTML = "Menu"
-    contact.innerHTML = "Contact"
+  
 
 
     //append
@@ -62,8 +57,7 @@ function initialPageLoad(){
     mainCourse.append(bland, flavor)
     mainMenu.append(appetizer, mainCourse, desserts)
     main.append(title,mainMenu)
-    header.append(home, menu, contact)
-    container.append(header, main)
+    container.append(main)
 
 
 

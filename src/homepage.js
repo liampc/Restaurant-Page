@@ -39,7 +39,6 @@ function initialPageLoad(){
 
 
     //text
-    
     restoName.innerHTML = "EAT WELL"
     quote.innerHTML = "A restaurant that caters to your needs"
 
@@ -47,8 +46,7 @@ function initialPageLoad(){
     //append
     emptyDiv.append(restoName,quote)
     main.append(emptyDiv)
-    header.append(home,menu,contact)
-    container.append(header, main)
+    container.append(main)
 
 
     //return 

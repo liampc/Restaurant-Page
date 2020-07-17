@@ -5,11 +5,11 @@ import * as contact from "./contact"
 
 const content = document.querySelector("#content")
 
+content.append(homepage.addHeader())
 
-//content.append(homepage.initialpage())
+//content.append(homepage.initialPage())
 
 //content.append(menu.initialPage())
 
-//content.append(contact.initialPage())
+content.append(contact.initialPage())
 
-content.append(homepage.addHeader())

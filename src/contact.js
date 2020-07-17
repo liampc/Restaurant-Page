@@ -26,27 +26,18 @@ function initialPageLoad() {
     //elements 
     let container = createTags("div", "container")
 
-    let header = createTags("div", "header")
-    let home = createTags("div")
-    let menu = createTags("div")
-    let contact = createTags("div")
-
     let main = createTags("div", "main")
     let info = createTags("div", "info")
    
 
 
     //text
-    home.innerHTML = "Home";
-    menu.innerHTML = "Menu"
-    contact.innerHTML = "Contact"
     info.innerHTML = render(myInfo);
 
 
     //append
     main.append(info)
-    header.append(home, menu, contact)
-    container.append(header, main)
+    container.append(main)
 
 
     return container
