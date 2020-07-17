@@ -40,7 +40,7 @@ function initialPageLoad(){
 
     //text
     restoName.innerHTML = "EAT WELL"
-    quote.innerHTML = "A restaurant that caters to your needs"
+    quote.innerHTML = "A gastritis inspired restaurant"
 
     
     //append
